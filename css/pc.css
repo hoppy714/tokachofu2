@@ -1,0 +1,151 @@
+/* PC */
+@media screen and (min-width:601px) {
+
+    .vh-l-50 {
+        height: 50vh;
+    }
+
+
+    .border-right-white {
+        border-right: white 1px solid;
+    }
+
+    /* ナビゲーション */
+    .top {
+        display: none;
+    }
+
+    .container-fluid {
+        position: absolute;
+        z-index: 9999 !important;
+        padding: 0 !important;
+    }
+
+    .float {
+        z-index: 99;
+    }
+
+    .float-y {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header {
+        z-index: 999;
+    }
+
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .logo {
+        float: left;
+        font-size: 1.2em;
+        font-family: serif;
+    }
+
+    .sidebarIconToggle {
+        display: none;
+    }
+
+    #sidebarMenu {
+        transition: .5s all ease-in;
+    }
+
+    .sidebarMenuInner {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    .sidebarMenuInner li {
+        z-index: 999;
+        list-style: none;
+    }
+
+    .sidebarMenuInner li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: .3s all ease-in-out;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebarMenuInner li a::after {
+        content: "";
+        width: 0%;
+        border: 1px solid rgba(0, 0, 0, 0);
+        transition: .3s all ease-in-out;
+    }
+
+    .sidebarMenuInner li a:hover::after {
+        border: 1px solid var(--primary-color);
+        width: 100%;
+    }
+
+    .sidebarMenuInner li a:hover {
+        color: black;
+    }
+
+    .dropsidebarMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        color: white !important;
+        box-shadow: 1px 1px 10px rgb(226, 226, 226);
+        border-bottom: 2px solid var(--sub-color);
+    }
+
+    .sec-content {
+        line-height: 2;
+    }
+
+    /* セクション1 */
+    .column-list {
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .section1-img {
+        width: 80% !important;
+    }
+
+
+    /* セクション2 */
+    .position-ajdast {
+        height: 100Vh;
+    }
+
+    .section2-ul>li:nth-child(1) {
+        width: 60vw;
+    }
+
+    .section2-ul>li:nth-child(2) {
+        width: 50vw;
+    }
+
+    .section2-ul>li:nth-child(3) {
+        width: 40vw;
+    }
+
+    .pc-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pc-row-list {
+        width: 50%;
+        text-align: center;
+    }
+
+}

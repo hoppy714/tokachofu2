@@ -1,0 +1,226 @@
+@media screen and (max-width:600px) {
+    .svg {
+        height: 65px;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .header-content {
+        font-size: 2.5em;
+        left: 6vw;
+        top: -100px;
+    }
+
+    .header-rotate {
+        top: 70vh;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: white;
+    }
+
+    .container-fluid {
+        height: 10vh;
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .top {
+        color: rgb(0, 0, 0);
+        z-index: 99;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        width: fit-content;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .sidebarMenuInner {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .sidebarMenuInner li {
+        list-style: none;
+        text-transform: uppercase;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .sidebarMenuInner li a {
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        height: 22px;
+        width: 22px;
+        z-index: 9999;
+    }
+
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 2px;
+        background-color: rgb(0, 0, 0);
+        transition: .3s all ease;
+    }
+
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+        background-color: black;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+        background-color: black;
+    }
+
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        transform: translateX(-250px);
+        transition: transform .25s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.952);
+        z-index: 999;
+
+    }
+
+    input[type="checkbox"]:checked~#sidebarMenu {
+        transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .float-y {
+        padding-top: 10vh;
+    }
+
+    /* セクション1 */
+
+    .section-title::before {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .section-title::after {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* セクション2 */
+    .position-ajdast {
+        height: 70Vh;
+    }
+
+    .section2-img {
+        top: 100px !important;
+        width: 70% !important;
+    }
+
+    .section2-ul>li:nth-child(1) {
+        width: 70vw;
+    }
+
+    .section2-ul>li:nth-child(2) {
+        width: 60vw;
+    }
+
+    .section2-ul>li:nth-child(3) {
+        width: 50vw;
+    }
+
+    .about-sec1-text1 {
+        left: 7%;
+    }
+
+    .about-sec1-text2 {
+        left: 20%;
+    }
+
+    .about-sec1-text3 {
+        right: 10px;
+        top: 70%;
+    }
+
+    .vh-s-25 {
+        height: 25vh;
+    }
+}
